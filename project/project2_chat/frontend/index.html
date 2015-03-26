@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<HEAD>
+ <meta charset="utf-8">
+ <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+ <title>Free Random Chat</title>
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+ <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+ <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+<script>
+  var socket = io.connect('http://127.0.0.1:8080');
+
+  // on connection to server, ask for user's name with an anonymous callback
+  socket.on('connect', function(){
+    // call the server-side function 'adduser' and send one parameter (value of prompt)
+    socket.emit('adduser');
+  });
+
+  // listener, whenever the server emits 'updatechat', this updates the chat body
+  socket.on('updatechat', function (user, data) {
+      $('#conversation').append('<b>'+user+' :</b> ' + data + '<br>');
+  });
+
+  // on load of page
+  $(function(){
+    // when the client clicks SEND
+    $('#datasend').click( function() {
+      var message = $('#data').val();
+      $('#data').val('');
+      // tell server to execute 'sendchat' and send along one parameter
+      socket.emit('sendchat', message);
+
+    });
+
+    // when the client hits ENTER on their keyboard
+    $('#data').keypress(function(e) {
+      if(e.which == 13) {
+        $(this).blur();
+        $('#datasend').focus().click();
+      	$("#data").focus().select();
+      	$("#data").trigger("click");
+      }
+    });
+
+    $(".quitRoom").on('click', function() {
+    	socket.emit('quitRoom');
+    	console.log('try to quit room');
+    });
+
+    $(window).on('navigate', function(event, data){
+	var dir = data.state.direction;
+	if (dir==='back') {
+		socket.emit('quitRoom');
+	}
+    });
+
+    $("#join").on('click', function() {
+	socket.emit('joinRoom');
+	console.log('try to join room');
+    });
+
+  });
+
+</script>
+
+</HEAD>
+<BODY>
+<div data-role="page" id="main">
+ <div data-role="header">
+ <h1>chat application</h1>
+ </div>
+
+ <div data-role="content">
+ <center>
+ <a data-role="button" href="#chatroom" id="join">join</a>
+ </center>
+ </div>
+</div>
+
+<div data-role="page" id="chatroom">
+ <div data-role="header">
+ <a href="#main" data-icon="back" class="quitRoom">back</a>
+ <h1 id="roomname">chatting room</h1>
+ </div>
+
+ <div data-role="content">
+
+  <div id="conversation">
+  </div>
+
+  <div class="ui-grid-a">
+   <div class="ui-block-a"><input type="text" id="data"/></div>
+   <div class="ui-block-b"><input type="button" id="datasend" value="보내기" data-inline="true" /></div>
+  </div>
+ </div>
+
+</div>
+
+</BODY>
+</HTML>

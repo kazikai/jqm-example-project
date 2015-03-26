@@ -1,0 +1,9 @@
+{
+     "name": "randomchat",
+     "description": "random chat application by using socket.io",
+     "version": "1.0.0",
+     "dependencies": {
+        "express": "*",
+        "socket.io": "*"
+     }
+}
