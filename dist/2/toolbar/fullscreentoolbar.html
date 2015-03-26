@@ -1,0 +1,31 @@
+<!doctype HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fullscreen toolbar - jQuery Mobile Demos</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.css"/>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.js"></script>
+
+</head>
+<body>
+
+<!-- page의  header와 footer 를 클릭할때 반응적으로 사라지게 하고싶을 경우 사용 -->
+<!-- 사용 방법은 data-position, data-fullscreen 둘다true -->
+<div id="page0" data-role="page" >
+  <div data-role="header" data-fullscreen="true" data-position="fixed" >
+    <h3> data-fullscreen="true" </h3>
+  </div><!-- header -->
+  <div data-role="content">
+    <img src="../../../dist/5/resources/img/main.png" alt="샘플이미지" style="width:100%; margin:0 auto;">
+  </div>
+  <div data-role="footer" data-fullscreen="true" data-position="fixed">
+    <h3>Standard Footer</h3>
+  </div>
+</div><!-- /page -->
+</body>
+
+</body>
+</html>

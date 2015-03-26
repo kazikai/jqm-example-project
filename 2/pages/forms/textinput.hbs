@@ -1,0 +1,311 @@
+---
+title: 텍스트 인풋
+---
+
+<div data-role="page" >
+  <div data-role="header" data-position="fixed">
+    <h3> TextInput Examples </h3>
+  </div><!-- header -->
+  <div data-role="content">
+    <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:1 Text input</h3></div>
+    <form>
+      <label for="text1">Text input: Basic</label>
+      <input type="text" name="text1" id="text1" value="data">
+    </form>
+    <form>
+      <label for="text2">Text input: Clear Button</label>
+      <input type="text" data-clear-btn="true" name="text2" id="text2" value="data">
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:2 Search</h3></div>
+    <form>
+      <label for="search1">Search: Basic</label>
+      <input type="search" name="search1" id="search1" value="data">
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+      <div><h3 class ="componentHead">Ex:3 Textarea</h3></div>
+      <form>
+        <label for="textarea1">Textarea: Basic</label>
+        <textarea name="textarea" id="textarea1"></textarea>
+      </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+      <div><h3 class ="componentHead">Ex:4 Number</h3></div>
+      <form>
+          <label for="number1">Number: Basic</label>
+          <input type="number" data-clear-btn="false" name="number1" id="number1" value="1">
+          <label for="number2">Number: Clear Button</label>
+          <input type="number" data-clear-btn="true" name="number2" id="number2" value="1">
+          <label for="number3">Number + pattern: Basic</label>
+          <input type="number" data-clear-btn="false" name="number3" pattern="[0-9]*" id="number-3" value="1">
+          <label for="number4">Number + pattern: Clear Button</label>
+          <input type="number" data-clear-btn="true" name="number4" pattern="[0-9]*" id="number-4" value="1">
+      </form>
+  </div><!--coomponet-->
+
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:5 Date</h3></div>
+    <form>
+      <label for="date1">Date: Basic</label>
+      <input type="date" data-clear-btn="false" name="date1" id="date1" value="19841111">
+      <label for="date2">Date: Clear Button</label>
+      <input type="date" data-clear-btn="true" name="date2" id="date2" value="19841111">
+    </form>
+  </div><!--coomponet-->
+
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:6 Month</h3></div>
+    <form>
+      <label for="month1">Month: Basic</label>
+      <input type="month" data-clear-btn="false" name="month1" id="month1" value="198411">
+      <label for="month2">Month: Clear Button</label>
+      <input type="month" data-clear-btn="true" name="month2" id="month2" value="198411">
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:7 Week</h3></div>
+    <form>
+      <label for="week1">Week: Basic</label>
+      <input type="week" data-clear-btn="false" name="week1" id="week1" value="2013-W42">
+      <label for="week2">Week:Clear Button</label>
+      <input type="week" data-clear-btn="true" name="week2" id="week2" value="2013-W42">
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:8 Time</h3></div>
+    <form>
+      <label for="time1">Time: Basic</label>
+      <input type="time" data-clear-btn="false" name="time1" id="time1" value="17:39:57">
+      <label for="time2">Time: Clear Button</label>
+      <input type="time" data-clear-btn="true" name="time2" id="time2" value="17:39:57">
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:9 Datetime</h3></div>
+    <form>
+      <label for="datetime1">Datetime: Basic</label>
+      <input type="datetime" data-clear-btn="false" name="datetime1" id="datetime1" value="199012-31T23:59:60Z">
+      <label for="datetime2">Datetime: Clear Button</label>
+      <input type="datetime" data-clear-btn="true" name="datetime2" id="datetime2" value="19961219T16:39:57-08:00">
+      <label for="datetime3">Datetime-local: Basic</label>
+      <input type="datetime-local" data-clear-btn="false" name="datetime3" id="datetime3" value="19961219T16:39:57-08:00">
+      <label for="datetime4">Datetime-local: Clear Button</label>
+      <input type="datetime-local" data-clear-btn="true" name="datetime4" id="datetime4" value="19961219T16:39:57-08:00">
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:10 Telephone</h3></div>
+    <form>
+      <label for="tel1">Tel: Basic</label>
+      <input type="tel" data-clear-btn="false" name="tel1" id="tel1" value="">
+      <label for="tel2">Tel: Clear Button</label>
+      <input type="tel" data-clear-btn="true" name="tel2" id="tel2" value="">
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:11 Email</h3></div>
+    <form>
+      <label for="email1">Email: Basic</label>
+      <input type="email" data-clear-btn="false" name="email1" id="email1" value="">
+      <label for="email2">Email: Clear Button</label>
+      <input type="email" data-clear-btn="true" name="email2" id="email2" value="">
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:12 URL</h3></div>
+    <form>
+      <label for="url1">Url: Basic</label>
+      <input type="url" data-clear-btn="false" name="url1" id="url1" value="">
+      <label for="url2">Url: Clear Button</label>
+      <input type="url" data-clear-btn="true" name="url2" id="url2" value="">
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:13 Password</h3></div>
+    <form>
+      <label for="password1">Password: Basic</label>
+      <input type="password" data-clear-btn="false" name="password1" id="password1" value="" autocomplete="off">
+      <label for="password2">Password: Clear Button</label>
+      <input type="password" data-clear-btn="true" name="password2" id="password2" value="" autocomplete="off">
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:14 Color</h3></div>
+    <form>
+      <label for="color1">Color: Basic</label>
+      <input type="color" data-clear-btn="false" name="color1" id="color1" value="">
+    </form>
+    <form>
+      <label for="color2">Color: Clear Button</label>
+      <input type="color" data-clear-btn="true" name="color2" id="color2" value="">
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:15 Files</h3></div>
+    <form>
+      <label for="file1">File: Basic</label>
+      <input type="file" data-clear-btn="false" name="file1" id="file1" value="">
+      <label for="file2">File: Clear Button</label>
+      <input type="file" data-clear-btn="true" name="file2" id="file2" value="">
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:16 Mini</h3></div>
+    <form>
+      <label for="text4">Text input: Mini</label>
+      <input type="text" data-mini="true" name="text4" id="text4" value="">
+      <label for="text5">Text input: Clear Button</label>
+      <input type="text" data-clear-btn="true" data-mini="true" name="text5" id="text5" value="">
+      <label for="search4">Search: Mini</label>
+      <input type="search" data-mini="true" name="search4" id="search4" value="">
+      <label for="textarea4">Textarea:</label>
+      <textarea data-mini="true" cols="40" rows="8" name="textarea4" id="textarea4"></textarea>
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:17 Placeholder</h3></div>
+    <form>
+      <label for="text6">Text input: Placeholder</label>
+      <input type="text" name="text6" id="text6" value="" placeholder="Placeholder">
+      <label for="text7">Text input: Clear Button</label>
+      <input type="text" data-clear-btn="true" name="text7" id="text7" value="" placeholder="Placeholder">
+      <label for="search5">Search:Placeholder</label>
+      <input type="search" name="search5" id="search5" value="" placeholder="Placeholder">
+      <label for="textarea6">Textarea: Placeholder</label>
+      <textarea cols="40" rows="8" name="textarea6" id="textarea6" placeholder="Placeholder"></textarea>
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:18 Value/Text</h3></div>
+    <form>
+      <label for="text18">Text input:</label>
+      <input type="text" name="text18" id="text18" value="Value">
+      <label for="text19">Text input: Clear Button</label>
+      <input type="text" data-clear-btn="true" name="text19" id="text19" value="Value">
+      <label for="search11">Search:</label>
+      <input type="search" name="search11" id="search11" value="Value">
+      <label for="textarea18">Textarea:</label>
+      <textarea cols="40" rows="8" name="textarea18" id="textarea18">Text</textarea>
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:19 Label Hidden</h3></div>
+    <form>
+      <label for="text8" class="ui-hidden-accessible">Text input:</label>
+      <input type="text" name="text8" id="text8" value="">
+      <label for="text9" class="ui-hidden-accessible">Text input: Clear Button</label>
+      <input type="text" data-clear-btn="true" name="text9" id="text9" value="">
+      <label for="search6" class="ui-hidden-accessible">Search:</label>
+      <input type="search" name="search6" id="search6" value="">
+      <label for="textarea8" class="ui-hidden-accessible">Textarea:</label>
+      <textarea cols="40" rows="8" name="textarea8" id="textarea8"></textarea>
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:20 Disabled</h3></div>
+    <form>
+      <label for="text10">Text input:</label>
+      <input type="text" disabled="disabled" name="text10" id="text10" value="">
+      <label for="text11">Text input: Clear Button</label>
+      <input type="text" data-clear-btn="true" disabled="disabled" name="text11" id="text11" value="">
+      <label for="search7">Search:</label>
+      <input type="search" disabled="disabled" name="search7" id="search7" value="">
+      <label for="textarea10">Textarea:</label>
+      <textarea disabled="disabled" cols="40" rows="8" name="textarea10" id="textarea10"></textarea>
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:21 Fieldcontain</h3></div>
+    <form>
+      <div data-role="fieldcontain">
+        <label for="text12">Text input:</label>
+        <input type="text" name="text12" id="text12" value="">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="text13">Text input: Clear Button</label>
+        <input type="text" data-clear-btn="true" name="text13" id="text13" value="">
+      </div>
+      <div data-role="fieldcontain">
+       <label for="search8">Search:</label>
+       <input type="search" name="search8" id="search8" value="">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="textarea12">Textarea:</label>
+        <textarea cols="40" rows="8" name="textarea12" id="textarea12"></textarea>
+      </div>
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:22 Fieldcontain, Mini</h3></div>
+    <form>
+      <div data-role="fieldcontain">
+        <label for="text14">Text input:</label>
+        <input type="text" data-mini="true" name="text14" id="text14" value="">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="text15">Text input: Clear Button</label>
+        <input type="text" data-clear-btn="true" data-mini="true" name="text15" id="text15" value="">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="search9">Search:</label>
+        <input type="search" data-mini="true" name="search9" id="search9" value="">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="textarea14">Textarea:</label>
+        <textarea data-mini="true" cols="40" rows="8" name="textarea14" id="textarea14"></textarea>
+      </div>
+    </form>
+  </div><!--coomponet-->
+
+  <div class="component">
+    <div><h3 class ="componentHead">Ex:23 Fieldcontain, Hidden label</h3></div>
+    <form>
+      <div data-role="fieldcontain" class="ui-hide-label">
+        <label for="text16">Text input:</label>
+        <input type="text" name="text16" id="text16" value="">
+      </div>
+      <div data-role="fieldcontain" class="ui-hide-label">
+        <label for="text17">Text input: Clear Button</label>
+        <input type="text" data-clear-btn="true" name="text17" id="text17" value="">
+      </div>
+      <div data-role="fieldcontain" class="ui-hide-label">
+        <label for="search10">Search:</label>
+        <input type="search" name="search110" id="search10" value="">
+      </div>
+      <div data-role="fieldcontain" class="ui-hide-label">
+        <label for="textarea16">Textarea:</label>
+        <textarea cols="40" rows="8" name="textarea16" id="textarea16"></textarea>
+      </div>
+    </form>
+  </div><!--coomponet-->
+  </div><!-- content -->
+  <div data-role="footer" data-position="fixed">
+    <h3>Powered by Hochul shin, Junghyun Han</h3>
+  </div>
+</div><!-- /page -->

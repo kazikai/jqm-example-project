@@ -1,0 +1,159 @@
+<!doctype HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>collasible - jQuery Mobile Demos</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.css"/>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.js"></script>
+
+</head>
+<body>
+
+
+<div data-role="page" >
+  <div data-role="header" data-position="fixed">
+    <h3> Collapsible Examples </h3>
+  </div><!-- header -->
+
+  <div data-role="content">
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:1 Basic Collapsible</h3></div>
+      <div data-role="collapsible">
+        <h4>제목</h4>
+        <p>제이쿼리 모바일의 collpasible 은 제목을 클릭했을때 보여집니다. </p>
+      </div>
+    </div><!--coomponet-->
+
+    <!-- data-theme="b"만 동작함..-->
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:2 Theme</h3></div>
+      <div data-role="collapsible" data-theme="b" data-content-theme="b" >
+        <h4>제목</h4>
+        <p>제이쿼리 모바일의 collpasible 은 제목을 클릭했을때 보여집니다.
+          data-theme="b"와 data-content-theme="b"를 추가하면 black으로 보여집니다. </p>
+      </div>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:3 Content no theme </h3></div>
+      <div data-role="collapsible"  data-theme="b" data-content-theme="false" >
+        <h4>제목</h4>
+        <div>div 요소도 넣어도 됩니다.  </div>
+        <p>제이쿼리 모바일의 collpasible 은 제목을 클릭했을때 보여집니다. data-content-theme="false" 입니다.  </p>
+      </div>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:4 Expanded </h3></div>
+      <div data-role="collapsible" data-collapsed="false" >
+        <h4>제목</h4>
+        <ul data-role="listview">
+          <li><a href="#">리스트도 됩니다.1</a></li>
+          <li><a href="#">리스트도 됩니다.2</a></li>
+          <li><a href="#">리스트도 됩니다.3</a></li>
+        </ul>
+      </div>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:5 Mini Size  <h3></div>
+      <div data-role="collapsible" data-mini="true" >
+        <h4>제목</h4>
+        <ul data-role="listview">
+          <li><a href="#">작아진 제목 크기.1</a></li>
+          <li><a href="#">작아진 제목 크기.2</a></li>
+          <li><a href="#">작아진 제목 크기.3</a></li>
+        </ul>
+      </div>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:6 Icon </h3></div>
+      <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" >
+        <h4>제목</h4>
+        <div>icon을 변경 가능하며 위치도 변경 가능합니다. </div>
+      </div>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:7 Non-inset Collapsible </h3></div>
+      <div data-role="collapsible" data-inset="false">
+        <h4>제목</h4>
+        <p>data-inset="false"를 하게 되면 코너 스타일링 없이 전체 width로 표현 됩니다. </p>
+      </div>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:8 Legend </h3></div>
+      <form>
+      <fieldset data-role="collapsible">
+        <legend>Legend 요소</legend>
+        <label for="textarea-f">Text area</label>
+        <textarea name="textarea-f" id="textarea-f" placeholder="Text area"></textarea>
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+      </fieldset>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:9 set of collapsible </h3></div>
+      <div data-role="collapsible">
+        <h3>제목1</h3>
+        <ul data-role="listview">
+          <li><a href="#">리스트1</a></li>
+          <li><a href="#">리스트2</a></li>
+          <li><a href="#">리스트3</a></li>
+        </ul>
+      </div>
+      <div data-role="collapsible">
+        <h3>제목2</h3>
+        <ul data-role="listview">
+          <li><a href="#">리스트1</a></li>
+          <li><a href="#">리스트2</a></li>
+          <li><a href="#">리스트3</a></li>
+        </ul>
+      </div>
+      <div data-role="collapsible">
+        <h3>제목3</h3>
+        <ul data-role="listview">
+          <li><a href="#">리스트1</a></li>
+          <li><a href="#">리스트2</a></li>
+          <li><a href="#">리스트3</a></li>
+        </ul>
+      </div>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:10 Pre-rendered Collapsible </h3></div>
+      <div data-role="collapsible" data-enhanced="true" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-collapsed">
+        <h4 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+          <a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-icon-plus">
+            제목
+          <div class="ui-collapsible-heading-status"> click to expand contents</div>
+          </a>
+        </h4>
+        <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+          <p>내용이 들어있는 부분입니다.</p>
+        </div>
+      </div>
+    </div><!--coomponet-->
+
+  </div><!-- content -->
+
+  <div data-role="footer" data-position="fixed">
+    <h3>Powered by Hochul shin, Junghyun Han</h3>
+  </div>
+</div><!-- /page -->
+</body>
+</html>

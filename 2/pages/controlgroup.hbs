@@ -1,0 +1,88 @@
+---
+title: controlgroup
+---
+
+<div data-role="page" >
+  <div data-role="header" data-position="fixed">
+    <h3> Control Group Examples </h3>
+  </div><!-- header -->
+
+  <div data-role="content">
+    <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:1 Button controlgroup</h3></div>
+      <div data-role="controlgroup">
+        <a href="#" data-role="button">button 1</a>
+        <a href="#" data-role="button">button 2</a>
+        <a href="#" data-role="button">button 3</a>
+        <a href="#" data-role="button">button 4</a>
+        <a href="#" data-role="button">button 5</a>
+      </div>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:2 Button controlgroup Mini</h3></div>
+      <div data-role="controlgroup" data-mini="true">
+        <a href="#" data-role="button">button 1</a>
+        <a href="#" data-role="button">button 2</a>
+        <a href="#" data-role="button">button 3</a>
+        <a href="#" data-role="button">button 4</a>
+        <a href="#" data-role="button">button 5</a>
+      </div>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:3 Button controlgroup Horizontal </h3></div>
+      <div data-role="controlgroup" data-type="horizontal">
+        <a href="#" data-role="button">button 1</a>
+        <a href="#" data-role="button">button 2</a>
+        <a href="#" data-role="button">button 3</a>
+        <a href="#" data-role="button">button 4</a>
+        <a href="#" data-role="button">button 5</a>
+      </div>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:4 Button controlgroup Horizontal, Mini</h3></div>
+      <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+        <a href="#" data-role="button">button 1</a>
+        <a href="#" data-role="button">button 2</a>
+        <a href="#" data-role="button">button 3</a>
+        <a href="#" data-role="button">button 4</a>
+        <a href="#" data-role="button">button 5</a>
+      </div>
+    </div><!--coomponet-->
+    <!-- radiobutto, checkbox, select 위젯은 각 위젯 example에 있음 -->
+
+    <!-- 아래 있는 예제는 1.4.0에서만 동작함 -->
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:5 Control group Textinput  </h3></div>
+      <label for="currency-controlgroup">Value</label>
+      <div data-role="controlgroup" data-type="horizontal">
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+        <input id="currency-controlgroup" type="text" data-wrapper-class="controlgroup-textinput ui-btn">
+        <button>dollar</button>
+      </div>
+      <label for="search-control-group">Search</label>
+      <div data-role="controlgroup" data-type="horizontal">
+          <input type="text" id="search-control-group" data-wrapper-class="controlgroup-textinput ui-btn">
+          <button>Submit</button>
+          <button>Reset</button>
+      </div>
+    </div><!--coomponet-->
+
+
+
+  </div><!-- content -->
+  <div data-role="footer" data-position="fixed">
+    <h3>Powered by Hochul shin, Junghyun Han</h3>
+  </div>
+</div><!-- /page -->

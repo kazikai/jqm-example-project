@@ -1,0 +1,210 @@
+---
+title: 셀렉트
+---
+
+<div data-role="page" >
+    <div data-role="header" data-position="fixed">
+        <h3> Select Examples </h3>
+    </div><!-- header -->
+    <div data-role="content">
+        <div class="component">
+            <div><h3 class ="componentHead">Ex:1 Basic Markup</h3></div>
+            <form>
+                <label for="select1">Basic Select</label>
+                <select name="select1" id="select1">
+                    <option value="1">Option1</option>
+                    <option value="2">Option2</option>
+                    <option value="3">Option3</option>
+                    <option value="4">Option4</option>
+                </select>
+            </form>
+        </div><!--coomponet-->
+
+        <div class="component">
+            <div><h3 class ="componentHead">Ex:2 Mini Size</h3></div>
+            <form>
+                <label for="select2">Mini Size</label>
+                <select name="select2" id="select2" data-mini="true">
+                    <option value="1">Option1</option>
+                    <option value="2">Option2</option>
+                    <option value="3">Option3</option>
+                    <option value="4">Option4</option>
+                </select>
+            </form>
+        </div><!--coomponet-->
+
+        <div class="component">
+            <div><h3 class ="componentHead">Ex:3 Icon Postion</h3></div>
+            <form>
+                <label for="select3">Icon Postion</label>
+                <select name="select3" id="select3" data-iconpos="left">
+                    <option value="1">Option1</option>
+                    <option value="2">Option2</option>
+                    <option value="3">Option3</option>
+                    <option value="4">Option4</option>
+                </select>
+            </form>
+        </div><!--coomponet-->
+
+        <div class="component">
+            <div><h3 class ="componentHead">Ex:4 Option Select</h3></div>
+            <form>
+                <label for="select4">Option Select</label>
+                <select name="select4" id="select4">
+                    <option value="1">Option1</option>
+                    <option value="2">Option2</option>
+                    <option value="3" selected="selected">Option3</option>
+                    <option value="4">Option4</option>
+                </select>
+            </form>
+        </div><!--coomponet-->
+
+        <div class="component">
+            <div><h3 class ="componentHead">Ex:5 Option Disable</h3></div>
+            <form>
+                <label for="select5">Option Disable</label>
+                <select name="select5" id="select5">
+                    <option value="1">Option1</option>
+                    <option value="2">Option2</option>
+                    <option value="3" disabled="disabled">Option3</option>
+                    <option value="4">Option4</option>
+                </select>
+            </form>
+        </div><!--coomponet-->
+
+        <div class="component">
+            <div><h3 class ="componentHead">Ex:6 Option Group</h3></div>
+            <form>
+                <label for="select6">Option Group(if supported):</label>
+                <select name="select6" id="select6">
+                    <option>Choose</option>
+                    <optgroup label="Group 1">
+                        <option value="1">Option1</option>
+                        <option value="2">Option2</option>
+                        <option value="3">Option3</option>
+                        <option value="4">Option4</option>
+                    </optgroup>
+                    <optgroup label="Group 2">
+                        <option value="5">Option5</option>
+                        <option value="6">Option6</option>
+                        <option value="7">Option7</option>
+                    </optgroup>
+                </select>
+            </form>
+        </div><!--coomponet-->
+
+        <div class="component">
+            <div><h3 class ="componentHead">Ex:7 Vertical Control Group</h3></div>
+            <form>
+            <fieldset data-role="controlgroup">
+                <legend>Vertical Control Group</legend>
+                <label for="select7">Select A</label>
+                <select name="select7" id="select7">
+                    <option value="#">Option1</option>
+                    <option value="#">Option2</option>
+                    <option value="#">Option3</option>
+                </select>
+                <label for="select8">Select B</label>
+                <select name="select8" id="select8">
+                    <option value="#">Option1</option>
+                    <option value="#">Option2</option>
+                    <option value="#">Option3</option>
+                </select>
+                <label for="select9">Select C</label>
+                <select name="select9" id="select9">
+                    <option value="#">Option1</option>
+                    <option value="#">Option2</option>
+                    <option value="#">Option3</option>
+                </select>
+            </fieldset>
+            </form>
+        </div><!--coomponet-->
+
+        <div class="component">
+            <div><h3 class ="componentHead">Ex:8 Vertical Control Group, Icon, Mini</h3></div>
+            <form>
+            <fieldset data-role="controlgroup" data-mini="true">
+                <legend>Vertical Control Group, Icon, Mini</legend>
+                <label for="select10">Select A</label>
+                <select name="select10" id="select10" data-iconpos="left">
+                    <option value="#">Option1</option>
+                    <option value="#">Option2</option>
+                    <option value="#">Option3</option>
+                </select>
+                <label for="select11">Select B</label>
+                <select name="select11" id="select11" data-iconpos="left">
+                    <option value="#">Option1</option>
+                    <option value="#">Option2</option>
+                    <option value="#">Option3</option>
+                </select>
+                <label for="select12">Select C</label>
+                <select name="select12" id="select12" data-iconpos="left">
+                    <option value="#">Option1</option>
+                    <option value="#">Option2</option>
+                    <option value="#">Option3</option>
+                </select>
+            </fieldset>
+            </form>
+        </div><!--coomponet-->
+
+        <div class="component">
+            <div><h3 class ="componentHead">Ex:9 Horizontal Group</h3></div>
+            <form>
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>Horizontal Group</legend>
+                <label for="select13">Select A</label>
+                <select name="select13" id="select13">
+                    <option value="#">Option1</option>
+                    <option value="#">Option2</option>
+                    <option value="#">Option3</option>
+                </select>
+                <label for="select14">Select B</label>
+                <select name="select14" id="select14">
+                    <option value="#">Option1</option>
+                    <option value="#">Option2</option>
+                    <option value="#">Option3</option>
+                </select>
+                <label for="select15">Select C</label>
+                <select name="select15" id="select15">
+                    <option value="#">Option1</option>
+                    <option value="#">Option2</option>
+                    <option value="#">Option3</option>
+                </select>
+            </fieldset>
+            </form>
+        </div><!--coomponet-->
+
+        <div class="component">
+            <div><h3 class ="componentHead">Ex:10 Horizontal Group, Mini</h3></div>
+            <form>
+            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <legend>Horizontal Gropu, Mini</legend>
+                <label for="select16">Select A</label>
+                <select name="select16" id="select16">
+                    <option value="#">Option1</option>
+                    <option value="#">Option2</option>
+                    <option value="#">Option3</option>
+                </select>
+                <label for="select17">Select B</label>
+                <select name="select17" id="select17">
+                    <option value="#">Option1</option>
+                    <option value="#">Option2</option>
+                    <option value="#">Option3</option>
+                </select>
+                <label for="select18">Select C</label>
+                <select name="select18" id="select18">
+                    <option value="#">Option1</option>
+                    <option value="#">Option2</option>
+                    <option value="#">Option3</option>
+                </select>
+            </fieldset>
+            </form>
+        </div><!--coomponet-->
+
+
+
+    </div><!-- content -->
+    <div data-role="footer" data-position="fixed">
+        <h3>Powered by Hochul shin, Junghyun Han</h3>
+    </div>
+</div><!-- /page -->

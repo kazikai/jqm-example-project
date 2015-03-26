@@ -1,0 +1,30 @@
+@media screen and ( min-width: 16em) {
+  .ui-table-columntoggle.ui-responsive-custom th.ui-table-priority-1, 
+  .ui-table-columntoggle.ui-responsive-custom td.ui-table-priority-1 {
+    display: table-cell
+  }
+}
+@media screen and ( min-width: 26em) {
+  .ui-table-columntoggle.ui-responsive-custom th.ui-table-priority-2, 
+  .ui-table-columntoggle.ui-responsive-custom td.ui-table-priority-2 {
+    display: table-cell
+  }
+}
+@media screen and ( min-width: 36em) {
+  .ui-table-columntoggle.ui-responsive-custom th.ui-table-priority-3, 
+  .ui-table-columntoggle.ui-responsive-custom td.ui-table-priority-3 {
+    display: table-cell
+  }
+}
+@media screen and ( min-width: 46em) {
+  .ui-table-columntoggle.ui-responsive-custom th.ui-table-priority-4, 
+  .ui-table-columntoggle.ui-responsive-custom td.ui-table-priority-4 {
+    display: table-cell
+  }
+}
+@media screen and ( min-width: 56em) {
+  .ui-table-columntoggle.ui-responsive-custom th.ui-table-priority-5, 
+  .ui-table-columntoggle.ui-responsive-custom td.ui-table-priority-5 {
+    display: table-cell
+  }
+}

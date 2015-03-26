@@ -1,0 +1,130 @@
+<!doctype HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Icon - jQuery Mobile Demos</title>
+  <link rel="stylesheet" href="../common/jqm-1.4.3/jquery.mobile-1.4.3.css" />
+  <script src="../common/jquery-1.9.1.js"></script>
+  <script src="../common/jqm-1.4.3/jquery.mobile-1.4.3.js"></script>
+  <style>
+      .ui-icon-myicon:after {
+        background-image: url("icon-custom.png");
+        /* Make your icon fit */
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+      }
+  </style>
+
+</head>
+<body>
+<div data-role="page" >
+  <div data-role="header" data-position="fixed">
+    <h3> Icon Examples </h3>
+  </div><!-- header -->
+  <div data-role="content">
+    <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:1 Icons- Basic</h3></div>
+        <div><h4>Bars: data-icon="bars"</h4></div>
+        <a href="index.html" data-role="button" data-icon="bars">Bars</a>
+        <div><h4>Edit: data-icon="edit"</h4></div>
+        <a href="index.html" data-role="button" data-icon="edit">Edit</a>
+        <div><h4>Left Arrow: data-icon="arrow-l"</h4></div>
+        <a href="index.html" data-role="button" data-icon="arrow-l">Left Arrow</a>
+        <div><h4>Right Arrow: data-icon="arrow-r"</h4></div>
+        <a href="index.html" data-role="button" data-icon="arrow-r">Right Arrow</a>
+        <div><h4>Up arrow: data-icon="arrow-u"</h4></div>
+        <a href="index.html" data-role="button" data-icon="arrow-u">Up Arrow</a>
+        <div><h4>Down arrow: data-icon="arrow-d"</h4></div>
+        <a href="index.html" data-role="button" data-icon="arrow-d">Down Arrow</a>
+        <div><h4>Delete: data-icon="delete"</h4></div>
+        <a href="index.html" data-role="button" data-icon="delete">Delete</a>
+        <div><h4>Plus: data-icon="plus"</h4></div>
+        <a href="index.html" data-role="button" data-icon="plus">Plus</a>
+        <div><h4>Edit: data-icon="minus"</h4></div>
+        <a href="index.html" data-role="button" data-icon="minus">Minus</a>
+        <div><h4>Check: data-icon="check"</h4></div>
+        <a href="index.html" data-role="button" data-icon="check">Check</a>
+        <div><h4>Gear: data-icon="gear"</h4></div>
+        <a href="index.html" data-role="button" data-icon="gear">Gear</a>
+        <div><h4>Refresh: data-icon="refresh"</h4></div>
+        <a href="index.html" data-role="button" data-icon="refresh">Refresh</a>
+        <div><h4>Forward: data-icon="forward"</h4></div>
+        <a href="index.html" data-role="button" data-icon="forward">Forward</a>
+        <div><h4>Back: data-icon="back"</h4></div>
+        <a href="index.html" data-role="button" data-icon="back">Back</a>
+        <div><h4>Grid: data-icon="grid"</h4></div>
+        <a href="index.html" data-role="button" data-icon="grid">Grid</a>
+        <div><h4>Star: data-icon="star"</h4></div>
+        <a href="index.html" data-role="button" data-icon="star">Star</a>
+        <div><h4>Alert: data-icon="alert"</h4></div>
+        <a href="index.html" data-role="button" data-icon="alert">Alert</a>
+        <div><h4>Info: data-icon="info"</h4></div>
+        <a href="index.html" data-role="button" data-icon="info">Info</a>
+        <div><h4>Home: data-icon="home"</h4></div>
+        <a href="index.html" data-role="button" data-icon="home">Home</a>
+        <div><h4>Search: data-icon="search"</h4></div>
+        <a href="index.html" data-role="button" data-icon="search">Search</a>
+      </div><!--coomponet-->
+
+      <div class="component">
+        <div><h3 class ="componentHead">Ex:2 Icons- Positioning</h3></div>
+        <div><h4>Left: data-iconpos="left"</h4></div>
+        <a href="index.html" data-role="button" data-icon="arrow-l" data-iconpos="left">Left</a>
+        <div><h4>Right: data-iconpos="right"</h4></div>
+        <a href="index.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Right</a>
+        <div><h4>Top: data-iconpos="top"</h4></div>
+        <a href="index.html" data-role="button" data-icon="arrow-u" data-iconpos="top">Top</a>
+        <div><h4>Down: data-iconpos="bottom"</h4></div>
+        <a href="index.html" data-role="button" data-icon="arrow-d" data-iconpos="bottom">Bottom</a>
+      </div><!--coomponet-->
+
+      <div class="component">
+        <div><h3 class ="componentHead">Ex:3 Icon only button</h3></div>
+        <div><h4>Icon only Button: data-iconpos="notext"</h4></div>
+        <a href="index.html" data-role="button" data-icon="search" data-iconpos="notext">Search</a>
+      </div><!--coomponet-->
+
+      <div class="component">
+        <div><h3 class ="componentHead">Ex:4 Removeing the disc and shadow in icons</h3></div>
+          <div><h4>Standard Icon</h4></div>
+          <a href="index.html" data-role="button" data-theme="b" data-icon="arrow-r" data-iconpos="notext" data-inline="true">Standard</a>
+          <div><h4>No disc</h4></div>
+          <a href="index.html" class="ui-icon-nodisc" data-role="button" data-theme="b" data-icon="arrow-r" data-iconpos="notext" data-inline="true">No disc</a>
+          <div><h4>No disc and shadow</h4></div>
+          <a href="index.html" class="ui-icon-nodisc" data-role="button" data-iconshadow="false" data-theme="b" data-icon="arrow-r" data-iconpos="notext" data-inline="true">No disc and shadow</a>
+      </div><!--coomponet-->
+
+      <div class="component">
+        <div><h3 class ="componentHead">Ex:5 Icon Black vs. white icon sets </h3></div>
+            <div><h4>Standard Icon</h4></div>
+            <a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Home - Standard</a>
+            <div><h4>Blacks Icons, No Disc</h4></div>
+            <a href="index.html" class="ui-icon-alt" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Home - Black icons, no disc</a>
+            <div><h4> LISTVIEW with Black Icons</h4></div>
+            <ul data-role="listview" data-inset="true" class="ui-icon-alt">
+              <li><a href="#">A</a></li>
+              <li><a href="#">B</a></li>
+              <li><a href="#">C</a></li>
+              <li><a href="#">D</a></li>
+              <li><a href="#">E</a></li>
+            </ul>
+
+      </div><!--coomponet-->
+
+      <div class="component">
+        <div><h3 class ="componentHead">Ex:6 Custom Icons</h3></div>
+        <input type="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon" value="Custom Icon">
+        <a href="#" class="ui-icon-email" data-role="button" data-icon="email">custom icon</a>
+        <!--1.4.0에 있는 방법으로 1.3.2가 표현이 안됨. -->
+      </div><!--coomponet-->
+
+
+    </div><!-- content -->
+    <div data-role="footer" data-position="fixed">
+        <h3>Powered by Hochul shin, Junghyun Han</h3>
+    </div>
+</div><!-- /page -->
+</body>
+</html>

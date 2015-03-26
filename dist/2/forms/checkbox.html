@@ -1,0 +1,120 @@
+<!doctype HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>체크박스 - jQuery Mobile Demos</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.css"/>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.js"></script>
+
+</head>
+<body>
+
+<div data-role="page" >
+  <div data-role="header" data-position="fixed">
+    <h3> Checkbox Examples </h3>
+  </div><!-- header -->
+
+  <div data-role="content">
+    <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:1 Basic Markup-1</h3></div>
+      <form>
+      <label>
+        <input type="checkbox" name="checkbox0">Check me
+      </label>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:2 Basic Markup-2</h3></div>
+      <form>
+        <label for="checkbox0">label match</label>
+        <input type="checkbox" name="checkbox0" id="checkbox0">
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:3 Mini size</h3></div>
+      <form>
+      <label>
+        <input type="checkbox" name="mini" class="custom" data-mini="true">Mini Size
+      </label>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:4 Vertical group</h3></div>
+      <form>
+        <fieldset data-role="controlgroup">
+        <legend>Vertical Group Checkbox</legend>
+        <input type="checkbox" name="checkbox1" id="checkbox1">
+        <label for="checkbox1">First</label>
+        <input type="checkbox" name="checkbox2" id="checkbox2" checked>
+        <label for="checkbox2">Second</label>
+        <input type="checkbox" name="checkbox3" id="checkbox3">
+        <label for="checkbox3">Third</label>
+        </fieldset>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:5 Horizontal group</h3></div>
+      <form>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>Horizontal Group Checkbox</legend>
+          <input type="checkbox" name="checkbox4" id="checkbox4">
+          <label for="checkbox4">First</label>
+          <input type="checkbox" name="checkbox5" id="checkbox5">
+          <label for="checkbox5">Second</label>
+          <input type="checkbox" name="checkbox6" id="checkbox6">
+          <label for="checkbox6">Third</label>
+        </fieldset>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:6 Icon Postion</h3></div>
+      <form>
+        <fieldset data-role="controlgroup" data-iconpos="right">
+          <legend>Horizontal Group Checkbox</legend>
+          <input type="checkbox" name="checkbox7" id="checkbox7" checked>
+          <label for="checkbox7">First</label>
+          <input type="checkbox" name="checkbox8" id="checkbox8">
+          <label for="checkbox8">Second</label>
+          <input type="checkbox" name="checkbox9" id="checkbox9">
+          <label for="checkbox9">Third</label>
+        </fieldset>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:7 Theme</h3></div>
+      <form>
+      <fieldset data-role="controlgroup" >
+        <legend>Swatch E:</legend>
+        <input type="checkbox" name="checkbox10" id="checkbox10" data-theme="a">
+        <label for="checkbox10">First</label>
+        <input type="checkbox" name="checkbox11" id="checkbox11" data-theme="b" checked>
+        <label for="checkbox11">Second</label>
+        <input type="checkbox" name="checkbox12" id="checkbox12" data-theme="c">
+        <label for="checkbox12">Third</label>
+        <input type="checkbox" name="checkbox13" id="checkbox13" data-theme="d">
+        <label for="checkbox13">Fourth</label>
+        <input type="checkbox" name="checkbox14" id="checkbox14" data-theme="e">
+        <label for="checkbox14">Fifth</label>
+      </fieldset>
+      </form>
+    </div><!--coomponet-->
+
+  </div><!-- content -->
+  <div data-role="footer" data-position="fixed">
+    <h3>Powered by Hochul shin, Junghyun Han</h3>
+  </div>
+</div><!-- /page -->
+
+</body>
+</html>

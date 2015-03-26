@@ -1,0 +1,263 @@
+<!doctype HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>래인지슬라이더 - jQuery Mobile Demos</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.css"/>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.js"></script>
+
+</head>
+<body>
+
+
+<div data-role="page" >
+  <div data-role="header" data-position="fixed">
+    <h3> Range Slider Examples </h3>
+  </div><!-- header -->
+  <div data-role="content">
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Range Slider1 : Basic Slider </h3></div>
+    <form>
+      <div data-role="rangeslider">
+        <label for="range1A">Rangeslider1A:</label>
+        <input type="range" name="range1A" id="range1A" min="0" max="100" value="40">
+        <label for="range1B">Rangeslider1B:</label>
+        <input type="range" name="range1B" id="range1B" min="0" max="100" value="80">
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Range Slider2 : Step attribute</h3></div>
+    <form>
+      <div data-role="rangeslider">
+        <label for="range2A">Rangeslider2A:</label>
+        <input type="range" name="range2A" id="range2A" min="0" max="10" step=".1" value="2.6">
+        <label for="range2B">Rangeslider2B:</label>
+        <input type="range" name="range2B" id="range2B" min="0" max="10" step=".1" value="5.4">
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Range Slider3 : No highlight</h3></div>
+    <form>
+      <div data-role="rangeslider" data-highlight="false">
+        <label for="range3A">Rangeslider3A (default is "true"):</label>
+        <input type="range" name="range3A" id="range3A" min="0" max="100" value="20">
+        <label for="range3B">Rangeslider3B:</label>
+        <input type="range" name="range3B" id="range3B" min="0" max="100" value="80">
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Range Slider4 : Theme</h3></div>
+    <form>
+      <div data-role="rangeslider" data-track-theme="b" data-theme="a">
+        <label for="range4A">Rangeslider4A:</label>
+        <input type="range" name="range4A" id="range4A" min="0" max="100" value="20">
+        <label for="range4B">Rangeslider4B:</label>
+        <input type="range" name="range4B" id="range4B" min="0" max="100" value="100">
+      </div>
+    </form>
+    <form>
+      <div data-role="rangeslider" data-track-theme="c" data-theme="b">
+        <label for="range4C">Rangeslider4C:</label>
+        <input type="range" name="range4C" id="range4C" min="0" max="100" value="20">
+        <label for="range4D">Rangeslider4D:</label>
+        <input type="range" name="range4D" id="range4D" min="0" max="100" value="100">
+      </div>
+    </form>
+    <form>
+      <div data-role="rangeslider" data-track-theme="d" data-theme="c">
+        <label for="range4E">Rangeslider4E:</label>
+        <input type="range" name="range4E" id="range4E" min="0" max="100" value="20">
+        <label for="range4F">Rangeslider4F:</label>
+        <input type="range" name="range4F" id="range4F" min="0" max="100" value="100">
+      </div>
+    </form>
+    <form>
+      <div data-role="rangeslider" data-track-theme="e" data-theme="d">
+        <label for="range4G">Rangeslider4G:</label>
+        <input type="range" name="range4G" id="range4G" min="0" max="100" value="20">
+        <label for="range4H">Rangeslider4H:</label>
+        <input type="range" name="range4H" id="range4H" min="0" max="100" value="100">
+      </div>
+    </form>
+    <form>
+      <div data-role="rangeslider" data-track-theme="a" data-theme="e">
+        <label for="range4I">Rangeslider4I:</label>
+        <input type="range" name="range4I" id="range4I" min="0" max="100" value="20">
+        <label for="range4J">Rangeslider4J:</label>
+        <input type="range" name="range4J" id="range4J" min="0" max="100" value="100">
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Range Slider5 : Mini sized</h3></div>
+    <form>
+      <div data-role="rangeslider" data-mini="true">
+        <label for="range5A">Rangeslider5A:</label>
+        <input type="range" name="range5A" id="range5A" min="0" max="100" value="0">
+        <label for="range5B">Rangeslider5B:</label>
+        <input type="range" name="range5B" id="range5B" min="0" max="100" value="100">
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Range Slider6 : Disabled</h3></div>
+    <form>
+      <div data-role="rangeslider">
+        <label for="range6A">Rangeslider6A:</label>
+        <input type="range" name="range6A" id="range6A" disabled="disabled" min="0" max="100" value="0">
+        <label for="range6B">Rangeslider6B:</label>
+        <input type="range" name="range6B" id="range6B" disabled="disabled" min="0" max="100" value="100">
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Range Slider7 : Label hidden</h3></div>
+    <form>
+      <div data-role="rangeslider">
+        <label for="range7A" class="ui-hidden-accessible">Rangeslider7A:</label>
+        <input type="range" name="range7A" id="range7A" min="0" max="100" value="0">
+        <label for="range7B">Rangeslider7B:</label>
+        <input type="range" name="range7B" id="range7B" min="0" max="100" value="100">
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Range Slider8 : Fieldcontain</h3></div>
+    <form>
+      <div data-role="fieldcontain">
+        <div data-role="rangeslider">
+          <label for="range8A">Rangeslider8A:</label>
+          <input type="range" name="range8A" id="range8A" min="0" max="100" value="0">
+          <label for="range8B">Rangeslider8B:</label>
+          <input type="range" name="range8B" id="range8B" min="0" max="100" value="100">
+        </div>
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Range Slider9 : Fieldcontain, mini sized</h3></div>
+    <form>
+      <div data-role="fieldcontain">
+        <div data-role="rangeslider" data-mini="true">
+          <label for="range9A">Rangeslider9A:</label>
+          <input type="range" name="range9A" id="range9A" min="0" max="100" value="0">
+          <label for="range9B">Rangeslider9B:</label>
+          <input type="range" name="range9B" id="range9B" min="0" max="100" value="100">
+        </div>
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Range Slider10 : Fieldcontain, hide label</h3></div>
+    <form>
+      <div data-role="fieldcontain" class="ui-hide-label">
+        <div data-role="rangeslider">
+          <label for="range10A">Rangeslider10A:</label>
+          <input type="range" name="range10A" id="range10A" min="0" max="100" value="0">
+          <label for="range10B">Rangeslider10B:</label>
+          <input type="range" name="range10B" id="range10B" min="0" max="100" value="100">
+        </div>
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Range Slider11 : Fieldcontain, hide label, mini sized</h3></div>
+    <form>
+      <div data-role="fieldcontain" class="ui-hide-label">
+        <div data-role="rangeslider" data-mini="true">
+          <label for="range11A">Rangeslider11A:</label>
+          <input type="range" name="range11A" id="range11A" min="0" max="100" value="0">
+          <label for="range11B">Rangeslider11B:</label>
+          <input type="range" name="range11B" id="range11B" min="0" max="100" value="100">
+        </div>
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Range Slider12 : Grid</h3></div>
+    <form>
+      <div class="ui-grid-a">
+      <div class="ui-block-a">
+        <div class="ui-bar ui-bar-c">
+          <div data-role="rangeslider">
+            <label for="range12A">Rangeslider12A:</label>
+            <input type="range" name="range12A" id="range12A" min="0" max="100" value="0">
+            <label for="range12B">Rangeslider12B:</label>
+            <input type="range" name="range12B" id="range12B" min="0" max="100" value="100">
+          </div>
+        </div><!-- /ui-bar -->
+      </div><!-- /ui-block -->
+      <div class="ui-block-b">
+        <div class="ui-bar ui-bar-c">
+          <label for="slider12C">Slider12C:</label>
+          <input type="range" name="slider12C" id="slider12C" data-highlight="true" min="0" max="100" value="50">
+        </div><!-- /ui-bar -->
+      </div><!-- /ui-block -->
+      <div class="ui-block-a">
+        <div class="ui-bar ui-bar-c">
+          <div data-role="rangeslider" data-mini="true">
+            <label for="range12D">Rangeslider12D:</label>
+            <input type="range" name="range12D" id="range12D" min="0" max="100" value="0">
+            <label for="range12E">Rangeslider12E:</label>
+            <input type="range" name="range12E" id="range12E" min="0" max="100" value="100">
+          </div>
+        </div><!-- /ui-bar -->
+      </div><!-- /ui-block -->
+      <div class="ui-block-b">
+        <div class="ui-bar ui-bar-c">
+          <label for="slider12F">Slider:</label>
+          <input type="range" name="slider12F" id="slider12F" data-mini="true" data-highlight="true" min="0" max="100" value="50">
+        </div><!-- /ui-bar -->
+      </div><!-- /ui-block -->
+    </div><!-- /ui-grid -->
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  </div><!-- content -->
+  <div data-role="footer" data-position="fixed">
+    <h3>Powered by Hochul shin, Junghyun Han</h3>
+  </div>
+</div><!-- /page -->
+</body>
+</html>

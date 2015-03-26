@@ -1,0 +1,152 @@
+---
+title: 풀립스위치
+---
+<div data-role="page" >
+  <div data-role="header" data-position="fixed">
+    <h3> FlipSwitch Examples </h3>
+  </div><!-- header -->
+  <div data-role="content">
+    <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:1 Basic Switch</h3></div>
+      <form>
+        <label for="basicSwitch">Basic Switch label</label>
+        <select name="flip-1" id="basicSwitch" data-role="slider">
+          <option value="off">Off</option>
+          <option value="on">On</option>
+        </select>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:2 Theme</h3></div>
+      <form>
+        <label for="theme">Ex:2 Theme label</label>
+        <select name="flip-2" id="theme" data-role="slider" data-track-theme="a" data-theme="c">
+          <option value="off">Off</option>
+          <option value="on">On</option>
+        </select>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:3 Mini</h3></div>
+      <form>
+        <label for="mini">Mini label</label>
+        <select name="flip-3" id="mini" data-role="slider" data-mini="true">
+          <option value="off">Off</option>
+          <option value="on">On</option>
+        </select>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:4 Disabled</h3></div>
+      <form>
+        <label for="disabled">Disabled label</label>
+        <select name="flip-4" id="disabled" data-role="slider" disabled="disabled">
+          <option value="off">Off</option>
+          <option value="on">On</option>
+        </select>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:5 Hidden label</h3></div>
+      <form>
+        <label for="hiddenLabel" class="ui-hidden-accessible">hidden label</label>
+        <select name="flip-5" id="hiddenLabel" data-role="slider">
+          <option value="off">Off</option>
+          <option value="on">On</option>
+        </select>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:6 Fieldcontain</h3></div>
+      <form>
+        <div data-role="fieldcontain">
+          <label for="fieldContain" >Fieldcontain label</label>
+          <select name="flip-6" id="fieldContain" data-role="slider">
+            <option value="off">Off</option>
+            <option value="on">On</option>
+          </select>
+        </div>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:7 Fieldcontain, Mini</h3></div>
+      <form>
+        <div data-role="fieldcontain">
+          <label for="fieldContainMini" >Fieldcontain Mini label</label>
+          <select name="flip-7" id="fieldContainMini" data-role="slider" data-mini="true">
+            <option value="off">Off</option>
+            <option value="on">On</option>
+          </select>
+        </div>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:8 Fieldcontain, hidden label</h3></div>
+      <form>
+        <div data-role="fieldcontain" class="ui-hide-label">
+          <label for="fieldContainHidden" >Fieldcontain hidden label</label>
+          <select name="flip-8" id="fieldContainHidden" data-role="slider">
+            <option value="off">Off</option>
+            <option value="on">On</option>
+          </select>
+        </div>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:9 Fieldcontain, hidden label, Mini</h3></div>
+      <form>
+        <div data-role="fieldcontain" class="ui-hide-label">
+          <label for="fieldContainHiddenMini" >Fieldcontain hidden, Mini label</label>
+          <select name="flip-9" id="fieldContainHiddenMini" data-role="slider" data-mini="true">
+            <option value="off">Off</option>
+            <option value="on">On</option>
+          </select>
+        </div>
+      </form>
+    </div><!--coomponet-->
+
+    <div class="component">
+      <div><h3 class ="componentHead">Ex:10 Grid</h3></div>
+      <form>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <label for="slider1">Slider1</label>
+            <input type="range" name="slider-1" id="slider1" data-highlight="true" min="0" max="100" value="50">
+          </div><!-- /ui-block -->
+          <div class="ui-block-b">
+            <label for="flipTogle">Flip toggle switch1</label>
+            <select name="flip-10" id="flipTogle" data-role="slider">
+              <option value="off">Off</option>
+              <option value="on">On</option>
+            </select>
+          </div><!-- /ui-block -->
+          <div class="ui-block-a">
+            <label for="slider2">Slider2</label>
+            <input type="range" name="slider-2" id="slider2" data-mini="true" data-highlight="true" min="0" max="100" value="50">
+          </div><!-- /ui-block -->
+          <div class="ui-block-b">
+            <label for="flipTogle2">Flip toggle switch2</label>
+            <select name="flip-11" id="flipTogle2" data-role="slider" data-mini="true">
+              <option value="off">Off</option>
+              <option value="on">On</option>
+            </select>
+          </div><!-- /ui-block -->
+        </div><!-- /ui-grid -->
+      </form>
+    </div><!--coomponet-->
+
+  </div><!-- content -->
+  <div data-role="footer" data-position="fixed">
+    <h3>Powered by Hochul shin, Junghyun Han</h3>
+  </div>
+</div><!-- /page -->

@@ -1,0 +1,63 @@
+---
+title: button
+jsfile: event
+prejqm: preevent
+---
+
+<div data-role="page" id="page1">
+  <div data-role="header" data-position="fixed">
+    <h3> Button Examples </h3>
+  </div><!-- header -->
+  <div data-role="content">
+    <a href="#page2" data-role="button">page2</a>
+    <a href="#touch" data-role="button">tap,taphold</a>
+    <form>
+      <input type="checkbox" name="event-on" id="event-on1" checked>
+      <label for="event-on1">Event On</label>
+      <input type="button" id="event-clear" value="Event Clear">
+      <input type="button" id="history-back" onclick="window.history.back();" value="History Back">
+    </form>
+    <h3>event name</h3>
+    <ul data-role="listview" id="event">
+    </ul>
+  </div><!-- content -->
+  <div data-role="footer" data-position="fixed">
+      <h3>Powered by Hochul shin, Junghyun Han</h3>
+  </div>
+</div><!-- /page -->
+
+<div data-role="page" id="page2">
+  <div data-role="header" data-position="fixed">
+    <h3> Button Examples </h3>
+  </div><!-- header -->
+  <div data-role="content">
+    <a href="#page1">page1</a>
+  </div><!-- content -->
+  <div data-role="footer" data-position="fixed">
+      <h3>Powered by Hochul shin, Junghyun Han</h3>
+  </div>
+</div><!-- /page -->
+
+
+<div data-role="page" id="test1">
+  <div data-role="header" data-position="fixed">
+    <h3> Button Examples </h3>
+  </div><!-- header -->
+  <div data-role="content">
+    <a href="#page1">page1</a>
+  </div><!-- content -->
+  <div data-role="footer" data-position="fixed">
+      <h3>Powered by Hochul shin, Junghyun Han</h3>
+  </div>
+</div><!-- /page -->
+<div data-role="page" id="touch">
+  <div data-role="header" data-position="fixed">
+    <h3> Button Examples </h3>
+  </div><!-- header -->
+  <div data-role="content">
+    <div sytle="width: 100%; height: 400px;">Touch</div>
+  </div><!-- content -->
+  <div data-role="footer" data-position="fixed">
+      <h3>Powered by Hochul shin, Junghyun Han</h3>
+  </div>
+</div><!-- /page -->

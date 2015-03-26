@@ -1,0 +1,185 @@
+---
+title: 싱글슬라이더
+---
+<div data-role="page" >
+  <div data-role="header" data-position="fixed">
+    <h3> Single Slider Examples </h3>
+  </div><!-- header -->
+  <div data-role="content">
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Single Slider1 : Basic Slider </h3></div>
+    <form>
+      <label for="slider1">Slider1:</label>
+      <input type="range" name="slider-1" id="slider1" min="0" max="100" value="50">
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Single Slider2 : Step attribute</h3></div>
+    <form>
+      <label for="slider2">Slider2:</label>
+      <input type="range" name="slider2" id="slider2" min="0" max="10" step=".1" value="4.5">
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Single Slider3 : Highlight</h3></div>
+    <form>
+      <label for="slider3">Slider3: (default is "false")</label>
+      <input type="range" name="slider3" id="slider3" data-highlight="true" min="0" max="100" value="50">
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Single Slider4 : Theme</h3></div>
+    <form>
+      <label for="slider4">Slider4: theme a </label>
+      <input type="range" name="slider4" id="slider4" data-track-theme="a"  data-highlight="true" data-theme="a" min="0" max="100" value="50">
+    </form>
+    <form>
+      <label for="slider4">Slider4: theme b </label>
+      <input type="range" name="slider4" id="slider4" data-track-theme="b" data-highlight="true"  data-theme="b" min="0" max="100" value="50">
+    </form>
+    <form>
+      <label for="slider4">Slider4: theme c </label>
+      <input type="range" name="slider4" id="slider4" data-track-theme="c" data-highlight="true"  data-theme="c" min="0" max="100" value="50">
+    </form>
+    <form>
+      <label for="slider4">Slider4: theme d </label>
+      <input type="range" name="slider4" id="slider4" data-track-theme="d" data-theme="d" min="0" max="100" value="50">
+    </form>
+    <form>
+      <label for="slider4">Slider4: theme e </label>
+      <input type="range" name="slider4" id="slider4" data-track-theme="d" data-theme="e" min="0" max="100" value="50">
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Single Slider5 : Mini sized</h3></div>
+    <form>
+      <label for="slider5">Slider5:</label>
+      <input type="range" name="slider5" id="slider5" data-mini="true" min="0" max="100" value="50">
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Single Slider6 : Disabled</h3></div>
+    <form>
+      <label for="slider6">Slider6:</label>
+      <input type="range" name="slider6" id="slider6" disabled="disabled" min="0" max="100" value="50">
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Single Slider7 : Label hidden</h3></div>
+    <form>
+      <label for="slider7" class="ui-hidden-accessible">Slider7:</label>
+      <input type="range" name="slider7" id="slider7" min="0" max="100" value="50">
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Single Slider8 : Fieldcontain</h3></div>
+    <form>
+      <div data-role="fieldcontain">
+        <label for="slider8">Slider8:</label>
+        <input type="range" name="slider8" id="slider8" min="0" max="100" value="50">
+      </div>
+    </form>
+    <form>
+      <div data-role="fieldcontain" style="border: 1px solid" >
+        <label for="slider8">Slider8: border 1px solid</label>
+        <input type="range" name="slider8" id="slider8" min="0" max="100" value="50">
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Single Slider9 : Fieldcontain, mini sized</h3></div>
+    <form>
+      <div data-role="fieldcontain">
+        <label for="slider9">Slider9:</label>
+        <input type="range" name="slider9" id="slider9" data-mini="true" min="0" max="100" value="50">
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Single Slider10 : Fieldcontain, hide label</h3></div>
+    <form>
+      <div data-role="fieldcontain" class="ui-hide-label">
+        <label for="slider10">Slider10:</label>
+        <input type="range" name="slider10" id="slider10" min="0" max="100" value="50">
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Single Slider11 : Fieldcontain, hide label, mini sized</h3></div>
+    <form>
+      <div data-role="fieldcontain" class="ui-hide-label">
+        <label for="slider11">Slider11:</label>
+        <input type="range" name="slider11" id="slider11" data-mini="true" min="0" max="100" value="50">
+      </div>
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  <div class="component">
+  <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    <div><h3 class ="componentHead">Single Slider12 : Grid</h3></div>
+    <form>
+      <div class="ui-grid-a">
+        <div class="ui-block-a">
+          <label for="slider12">Slider12:</label>
+          <input type="range" name="slider12" id="slider12" data-highlight="true" min="0" max="100" value="50">
+        </div><!-- /ui-block -->
+        <div class="ui-block-b">
+          <label for="flip-10">Flip toggle switch:</label>
+          <select name="flip-10" id="flip-10" data-role="slider">
+            <option value="off">Off</option>
+            <option value="on">On</option>
+          </select>
+        </div><!-- /ui-block -->
+        <div class="ui-block-a">
+          <label for="slider13">Slider13:</label>
+          <input type="range" name="slider13" id="slider13" data-mini="true" data-highlight="true" min="0" max="100" value="50">
+        </div><!-- /ui-block -->
+        <div class="ui-block-b">
+          <label for="flip-11">Flip toggle switch:</label>
+          <select name="flip-11" id="flip-11" data-role="slider" data-mini="true">
+            <option value="off">Off</option>
+            <option value="on">On</option>
+          </select>
+        </div><!-- /ui-block -->
+      </div><!-- /ui-grid -->
+    </form>
+  </div>
+  </div><!--coomponet-->
+
+  </div><!-- content -->
+  <div data-role="footer" data-position="fixed">
+    <h3>Powered by Hochul shin, Junghyun Han</h3>
+  </div>
+</div><!-- /page -->

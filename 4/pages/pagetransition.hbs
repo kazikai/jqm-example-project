@@ -1,0 +1,23 @@
+---
+title: page transition test
+jsfile: pagetransition
+---
+
+<div data-role="page" id="page1">
+    <div data-role="header" data-position="fixed">
+        <h3> page transition Examples </h3>
+    </div><!-- header -->
+    <div data-role="content">
+        <a href="#page2" class="ui-btn" data-transition="slide">slide</a>
+        <a href="#page2" class="ui-btn" data-transition="sequential_slide">sequential_slide</a>
+    </div>
+</div><!-- /page -->
+
+<div data-role="page" id="page2">
+  <div data-role="header" data-position="fixed">
+    <h3> Page 2 </h3>
+  </div><!-- header -->
+    <div data-role="content">
+        page2
+    </div>
+</div><!-- /page -->
