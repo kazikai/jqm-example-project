@@ -5,7 +5,7 @@ var express = require('express')
   , io = require('socket.io').listen(server);
 
 //log level : debug(3)
-io.set('log level', 3);
+//io.set('log level', 3);
 
 server.listen(8080);
 console.log('listening 8080 port...');
