@@ -16,7 +16,7 @@ var findRoom = function() {
     var i;
     // find waiting room (1 people)
     for(i in Rooms) {
-        if (Rooms[i].people==1) {
+        if (Rooms[i].people===1) {
             console.log('found room :', Rooms[i]);
             return Rooms[i];
         }
@@ -24,7 +24,7 @@ var findRoom = function() {
 
     // find empty room (0 people)
     for(i in Rooms) {
-        if (Rooms[i].people==0) {
+        if (Rooms[i].people===0) {
             console.log('found room :', Rooms[i]);
             return Rooms[i];
         }
@@ -80,7 +80,7 @@ io.sockets.on('connection', function (socket) {
         socket.room = oRoom.name;
         socket.emit('updatechat', 'Server', 'You entered '+oRoom.name+'.');
         socket.broadcast.to(oRoom.name).emit('updatechat', 'Server', socket.username+' joins '+oRoom.name+'.');
-        oRoom.nPeople+=1;
+        oRoom.people+=1;
     });
 
     socket.on('quitRoom', function() {
