@@ -8,11 +8,8 @@
 define( [ "jquery", "../../widget" ], function( jQuery ) {
 //>>excludeEnd("jqmBuildExclude");
 (function( $, undefined ) {
-
 $.widget( "mobile.button", {
-
     initSelector: "input[type='button'], input[type='submit'], input[type='reset']",
-
     options: {
         theme: null,
         icon: null,
@@ -25,9 +22,7 @@ $.widget( "mobile.button", {
         wrapperClass: null,
         enhanced: false
     },
-
     _create: function() {
-
         if ( this.element.is( ":disabled" ) ) {
             this.options.disabled = true;
         }
@@ -35,7 +30,6 @@ $.widget( "mobile.button", {
         if ( !this.options.enhanced ) {
             this._enhance();
         }
-
         $.extend( this, {
             wrapper: this.element.parent()
         });
@@ -78,8 +72,8 @@ $.widget( "mobile.button", {
     },
 
     _destroy: function() {
-            this.element.insertBefore( this.wrapper );
-            this.wrapper.remove();
+            this.element.insertBefore( this.button );
+            this.button.remove();
     },
 
     _getIconClasses: function( options ) {
@@ -112,7 +106,6 @@ $.widget( "mobile.button", {
             this.element.prop( "disabled", options.disabled );
             outer.toggleClass( "ui-state-disabled", options.disabled );
         }
-
         if ( options.icon !== undefined ||
                 options.iconshadow !== undefined || /* TODO: Deprecated in 1.4, remove in 1.5. */
                 options.iconpos !== undefined ) {
@@ -121,14 +114,11 @@ $.widget( "mobile.button", {
                 .addClass( this._getIconClasses(
                     $.extend( {}, this.options, options ) ) );
         }
-
         this._super( options );
     },
-
     refresh: function( create ) {
         var originalElement,
             isDisabled = this.element.prop( "disabled" );
-
         if ( this.options.icon && this.options.iconpos === "notext" && this.element.attr( "title" ) ) {
             this.element.attr( "title", this.element.val() );
         }
