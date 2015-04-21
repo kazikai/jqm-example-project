@@ -90,7 +90,6 @@ io.sockets.on('connection', function (socket) {
         if (!socket.oRoom || !socket.room) {
             return;
         }
-        var name = socket.oRoom.name;
 
         socket.leave(socket.room);
         quitRoom(socket.oRoom);
