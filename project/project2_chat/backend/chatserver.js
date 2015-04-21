@@ -14,7 +14,7 @@ var nRoom = 0;
 
 var findRoom = function() {
     var i;
-    // find waiting room (1 people)
+    // 한명만 있는 방을 찾는다.
     for(i in Rooms) {
         if (Rooms[i].people===1) {
             console.log('found room :', Rooms[i]);
@@ -22,7 +22,7 @@ var findRoom = function() {
         }
     }
 
-    // find empty room (0 people)
+    // 없을 경우, 빈방을 찾는다.
     for(i in Rooms) {
         if (Rooms[i].people===0) {
             console.log('found room :', Rooms[i]);
@@ -30,7 +30,7 @@ var findRoom = function() {
         }
     }
 
-    // create a new room
+    // 그 외의 경우, 새 방을 만든다.
     var room = {
         name: 'room'+nRoom,
         people:0
@@ -43,7 +43,7 @@ var findRoom = function() {
 };
 
 var joinRoom = function(room) {
-    // if room is full
+    // 방이 꽉 찼을 경우에는 실패.
     if (room.people>=2) {
         console.log(room.name+' is full.');
         return false;
@@ -61,6 +61,7 @@ io.sockets.on('connection', function (socket) {
     socket.on('adduser', function() {
         nUser += 1;
         socket.username = 'User'+nUser;
+        console.log(socket.username+' is added.');
     });
 
     socket.on('sendchat', function (data) {
@@ -70,15 +71,19 @@ io.sockets.on('connection', function (socket) {
 
     socket.on('joinRoom', function() {
         var oRoom = findRoom();
-        joinRoom( oRoom );
 
-        socket.join( oRoom.name );
+        if ( joinRoom( oRoom ) ) {
+            socket.join( oRoom.name );
 
-        socket.oRoom = oRoom;
-        socket.room = oRoom.name;
+            socket.oRoom = oRoom;
+            socket.room = oRoom.name;
 
-        socket.emit('updatechat', 'Server', 'You entered '+oRoom.name+'.');
-        socket.broadcast.to(oRoom.name).emit('updatechat', 'Server', socket.username+' joins '+oRoom.name+'.');
+            socket.emit('updatechat', 'Server', 'You entered '+oRoom.name);
+            socket.broadcast.to(oRoom.name).emit('updatechat', 'Server', socket.username+' joins '+oRoom.name+'.');
+        } else {
+            console.log("fail to join "+oRoom.name);
+            socket.broadcast.to(oRoom.name).emit('updatechat', 'Server', 'fail to join '+oRoom.name+'.');
+        }
     });
 
     socket.on('quitRoom', function() {
@@ -89,7 +94,5 @@ io.sockets.on('connection', function (socket) {
 
         socket.leave(socket.room);
         quitRoom(socket.oRoom);
-
-        socket.broadcast.to(socket.room).emit('updatechat', 'User', socket.username+' leaved '+socket.oRoom.name+'.');
     });
 });
