@@ -43,7 +43,7 @@ var findRoom = function() {
 };
 
 var joinRoom = function(room) {
-    // if full
+    // if room is full
     if (room.people>=2) {
         console.log(room.name+' is full.');
         return false;
@@ -63,13 +63,11 @@ io.sockets.on('connection', function (socket) {
         socket.username = 'User'+nUser;
     });
 
-    // when the client emits 'sendchat', this listens and executes
     socket.on('sendchat', function (data) {
 	console.log( '['+socket.room+'] '+socket.username+' : '+data );
             io.sockets.in(socket.room).emit('updatechat', socket.username, data);
     });
 
-    // if no empty room, create a room.
     socket.on('joinRoom', function() {
         var oRoom = findRoom();
         joinRoom( oRoom );
@@ -78,31 +76,20 @@ io.sockets.on('connection', function (socket) {
 
         socket.oRoom = oRoom;
         socket.room = oRoom.name;
+
         socket.emit('updatechat', 'Server', 'You entered '+oRoom.name+'.');
         socket.broadcast.to(oRoom.name).emit('updatechat', 'Server', socket.username+' joins '+oRoom.name+'.');
-        oRoom.people+=1;
     });
 
     socket.on('quitRoom', function() {
-        if (!socket.oRoom) {
+        if (!socket.oRoom || !socket.room) {
             return;
         }
         var name = socket.oRoom.name;
 
-        if (!socket.room || !socket.oRoom) {
-            return;
-        }
         socket.leave(socket.room);
         quitRoom(socket.oRoom);
 
         socket.broadcast.to(socket.room).emit('updatechat', 'User', socket.username+' leaved '+socket.oRoom.name+'.');
-    });
-
-    // when the user disconnects.. perform this
-    socket.on('disconnect', function(){
-        if (socket.room) {
-               socket.broadcast.to(socket.room).emit('updatechat', 'Server', socket.username+' try to quit.');
-        }
-        socket.leave(socket.room);
     });
 });

@@ -11,18 +11,14 @@
 <script>
     var socket = io.connect('http://127.0.0.1:8080');
 
-    // on connection to server, ask for user's name with an anonymous callback
     socket.on('connect', function(){
-        // call the server-side function 'adduser' and send one parameter (value of prompt)
         socket.emit('adduser');
     });
 
-    // listener, whenever the server emits 'updatechat', this updates the chat body
     socket.on('updatechat', function (user, data) {
         $('#conversation').append('<b>'+user+' :</b> ' + data + '<br>');
     });
 
-    // on load of page
     $(function(){
         // when the client clicks SEND
         $('#datasend').click( function() {
@@ -66,28 +62,30 @@
 <BODY>
   <div data-role="page" id="main">
     <div data-role="header">
-    <h1>chat application</h1>
+    <h1>채팅 애플리케이션</h1>
     </div>
 
     <div data-role="content">
     <center>
-    <a data-role="button" href="#chatroom" id="join">join</a>
+    대화방에 참여하려면 참여 버튼을 누르세요.
+    <a data-role="button" href="#chatroom" id="join">참여</a>
     </center>
     </div>
   </div>
 
   <div data-role="page" id="chatroom">
      <div data-role="header">
-     <a href="#main" data-icon="back" class="quitRoom">back</a>
-     <h1 id="roomname">chatting room</h1>
+     <a href="#main" data-icon="back" class="quitRoom">뒤로</a>
+     <h1 id="roomname">대화방</h1>
      </div>
 
     <div data-role="content">
       <div id="conversation">
       </div>
-      <div class="ui-grid-a">
-        <div class="ui-block-a"><input type="text" id="data"/></div>
-        <div class="ui-block-b"><input type="button" id="datasend" value="보내기" data-inline="true" /></div>
+      <div style="margin-right:75px">
+        <div style="float:left; width:100%;"><input type="text" id="data"/></div>
+        <div style="float:right; width:75px; margin-right:-75px;"><input type="button" id="datasend" value="보내기" data-inline="true" /></div>
+        <div style="clear:both;"></div>
       </div>
     </div>
 
