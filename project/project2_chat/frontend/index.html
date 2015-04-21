@@ -15,6 +15,25 @@
         socket.emit('adduser');
     });
 
+
+    socket.on('updateRoomlist', function(data) {
+        $("#listview_room").children().remove();
+
+        var isNoRoom = true;
+        for(var i in data) {
+            isNoRoom = false;
+            var roomname = data[i].name;
+            $("#listview_room").append('<li>'+roomname+'<span class="ui-li-count">'+data[i].people+' / 2'+'</span></li>');
+        }
+
+        if (isNoRoom) {
+            $("#listview_room").append('<li>현재 만들어진 방이 없습니다.</li>');
+        }
+
+        $('#listview_room').listview('refresh');
+    });
+
+
     socket.on('updatechat', function (user, data) {
         $('#conversation').append('<b>'+user+' :</b> ' + data + '<br>');
     });
@@ -67,7 +86,10 @@
 
     <div data-role="content">
     <center>
-    대화방에 참여하려면 참여 버튼을 누르세요.
+    <h2>대화방 리스트</h2>
+    <ul data-role="listview" data-inset="true" id="listview_room">
+    </ul>
+    대화방에 참여하려면 아래의 참여 버튼을 누르세요.
     <a data-role="button" href="#chatroom" id="join">참여</a>
     </center>
     </div>

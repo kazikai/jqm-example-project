@@ -62,6 +62,8 @@ io.sockets.on('connection', function (socket) {
         nUser += 1;
         socket.username = 'User'+nUser;
         console.log(socket.username+' is added.');
+
+        socket.emit('updateRoomlist', Rooms);
     });
 
     socket.on('sendchat', function (data) {
