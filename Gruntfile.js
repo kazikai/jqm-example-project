@@ -168,5 +168,5 @@ module.exports = function(grunt) {
   //grunt.registerTask('deploy:2',['build:2', 'kazikaicopy']);
   //grunt.registerTask('build:is', ['clean:is', 'assemble:is', 'useminPrepare:is', 'concat', 'uglify', 'cssmin', 'copy:is', 'usemin']);
   //grunt.registerTask('build:merchant', ['clean:merchant', 'assemble:merchant', 'useminPrepare:merchant', 'concat', 'uglify', 'cssmin', 'copy:merchant', 'usemin']);
-  grunt.registerTask('build', ['build:is', 'build:merchant']);
+  grunt.registerTask('build', ['build:2', 'build:3', 'build:4']);
 };
