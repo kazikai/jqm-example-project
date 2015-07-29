@@ -17,7 +17,7 @@ $( window ).on( "orientationchange", function( e ) {
 
 // Bind to the navigate event
 $( window ).on( "navigate", function( e, data ) {
-  //console.log( data.state );
+  alert( e.type );
   console.log( e.type );
   printEvent( e.type );
 
